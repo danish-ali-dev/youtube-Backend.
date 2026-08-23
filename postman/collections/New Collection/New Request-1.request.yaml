@@ -1,0 +1,26 @@
+$kind: http-request
+name: New Request
+url: 'http://localhost:8000/api/v1/users/register'
+method: POST
+order: 4141953299985187
+body:
+  type: formdata
+  content:
+    - key: fullName
+      type: text
+      value: Danish Ali
+    - key: email
+      type: text
+      value: danish897@gmail.com
+    - key: password
+      type: text
+      value: '123456'
+    - key: Username
+      type: text
+      value: danish897
+    - key: profileImage
+      type: file
+      src: 'postman-cloud:///1f19a0c0-f716-4210-8559-d7b305eca5f3'
+    - key: coverImage
+      type: file
+      src: 'postman-cloud:///1f19a0c1-16ed-4fc0-9717-9b62f579e92f'

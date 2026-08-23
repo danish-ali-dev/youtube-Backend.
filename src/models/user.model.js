@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
+// import mongoose, { Schema } from "mongoose";
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -42,7 +43,7 @@ const userSchema = new mongoose.Schema({
  },
  watchHistory:[
     {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Video"
     }
  ],
@@ -94,3 +95,4 @@ userSchema.methods.generateRefreshToken = function () {
     );
 };
 export const User = mongoose.model("User", userSchema); 
+export default User;

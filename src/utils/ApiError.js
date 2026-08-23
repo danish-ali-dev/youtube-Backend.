@@ -19,3 +19,4 @@ class ApiError extends Error { // ApiError class extends the built-in Error clas
         }
     }
 }
+export {ApiError}

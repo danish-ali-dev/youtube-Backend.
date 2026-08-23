@@ -7,12 +7,12 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
-cloudinary.v2.uploader.upload("path/to/file", { public_id: "sample_id" },
-     function(error, result)
-      {console.log(result, error); 
+// cloudinary.uploader.upload("path/to/file", { public_id: "sample_id" },
+//      function(error, result)
+//       {console.log(result, error); 
 
-      }
-    );
+//       }
+//     );
 
 const uploadOnCloudinary = async (localFilePath) => {
     try{
